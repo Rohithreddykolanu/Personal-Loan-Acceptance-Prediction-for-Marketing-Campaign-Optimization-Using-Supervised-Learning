@@ -1,0 +1,2 @@
+# Personal-Loan-Acceptance-Prediction-for-Marketing-Campaign-Optimization-Using-Supervised-Learning
+Supervised learning project predicting Personal_Loan acceptance for AllLife Bank using a dataset of 5,000 customers across 14 demographic and behavioural features with a 9:1 imbalanced target. Compares unpruned, pre pruned, and cost complexity post pruned Decision Trees in Python, evaluated on recall and F1 to optimize loan targeting.
