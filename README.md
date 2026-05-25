@@ -106,7 +106,3 @@ jupyter notebook notebooks/loan_acceptance_prediction.ipynb
 ## Tech Stack
 
 Python, pandas, NumPy, scikit-learn, Matplotlib, seaborn, Jupyter
-
-## License
-
-Released under the MIT License. AllLife Bank is a fictional institution used for an educational case study.
