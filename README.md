@@ -42,12 +42,12 @@ The dataset contains **5,000 customers** across **14 columns**, with no missing 
 
 ## Approach
 
-1. **Data understanding.** Reviewed the shape, data types, and missing values, and confirmed a clean dataset with no imputation required.
-2. **Exploratory data analysis.** Studied univariate distributions and bivariate relationships between each feature and loan acceptance, including a correlation analysis that revealed Age and Experience are almost perfectly correlated.
-3. **Data preparation.** Dropped the redundant Experience feature, handled skewed variables such as Income, CCAvg, and Mortgage, and encoded categorical fields for modelling.
-4. **Modelling.** Trained Decision Tree classifiers and compared four strategies: a default unpruned tree, a pre pruned tree, and two post pruned trees optimized through cost complexity pruning.
-5. **Evaluation.** Compared models on accuracy, precision, recall, and F1 score, with emphasis on recall and F1 because of the class imbalance.
-6. **Recommendations.** Translated feature importance and segment behaviour into targeting and cross sell actions for the marketing team.
+1. **Data understanding:** Reviewed the shape, data types, and missing values, and confirmed a clean dataset with no imputation required.
+2. **Exploratory data analysis:** Studied univariate distributions and bivariate relationships between each feature and loan acceptance, including a correlation analysis that revealed Age and Experience are almost perfectly correlated.
+3. **Data preparation:** Dropped the redundant Experience feature, handled skewed variables such as Income, CCAvg, and Mortgage, and encoded categorical fields for modelling.
+4. **Modelling:** Trained Decision Tree classifiers and compared four strategies: a default unpruned tree, a pre pruned tree, and two post pruned trees optimized through cost complexity pruning.
+5. **Evaluation:** Compared models on accuracy, precision, recall, and F1 score, with emphasis on recall and F1 because of the class imbalance.
+6. **Recommendations:** Translated feature importance and segment behaviour into targeting and cross sell actions for the marketing team.
 
 ## Key Findings
 
@@ -69,39 +69,6 @@ The dataset contains **5,000 customers** across **14 columns**, with no missing 
 - Treat the large base of customers without an outside credit card as a separate cross sell opportunity for card products.
 - Deploy the post pruned tree for production scoring and keep the simpler pre pruned tree as an interpretable model for explaining decisions to stakeholders and regulators.
 - Report recall and F1 score rather than accuracy, given the 9 to 1 class imbalance.
-
-## Repository Structure
-
-```
-loan-acceptance-prediction/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── data/
-│   └── Personal_Loan_Modelling.csv     # not committed (see .gitignore)
-├── notebooks/
-│   └── loan_acceptance_prediction.ipynb
-└── reports/
-    └── loan_acceptance_prediction.html  # exported notebook
-```
-
-## Getting Started
-
-```bash
-# clone
-git clone https://github.com/<your-username>/loan-acceptance-prediction.git
-cd loan-acceptance-prediction
-
-# (optional) create a virtual environment
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-# install dependencies
-pip install -r requirements.txt
-
-# launch the notebook
-jupyter notebook notebooks/loan_acceptance_prediction.ipynb
-```
 
 ## Tech Stack
 
